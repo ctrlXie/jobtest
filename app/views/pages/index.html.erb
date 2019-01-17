@@ -17,38 +17,12 @@
      <%= render 'shared/navbar' %>
   </div>
   <div>
-      <%= render 'shared/sidenav' %>
+      <%= render 'shared/sidenav' %> <!--sorry, still working on this-->
   </div>
 
-
-<div class="container">
-  <div class="row">
-    <div class="card">
-      <i class="fa fa-user"><p id="text">No user risk score yet</p></i>
-    </div>
-    <div class="card-2">
-        <%= render 'shared/tabs' %>
-    </div>
+  <div>
+      <%= render 'shared/cards' %>
   </div>
-</div>
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="card-3">
-      <ul>
-        <li>Target</li>
-        <li>Initial deposit</li>
-        <li>Monthyly payment</li>
-        <li>Period</li>
-      </ul>
-    </div>
-    <div class="card-4">
-        <canvas id="myChart"></canvas>
-    </div>
-  </div>
-</div>
 
 
     <script>
@@ -57,7 +31,7 @@
       let massPopChart = new Chart(myChart, {
         type:'bar', //types: bar, horizontal, pie, line, donut
         data: {
-          labels:['salt lake city', 'ogden', 'farmington'],
+          labels:['Salt Lake City', 'Ogden', 'Farmington'],
           datasets: [{
             label:'Utah population',
             data: [
