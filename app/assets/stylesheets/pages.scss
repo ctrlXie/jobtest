@@ -1,0 +1,80 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background: #f2f2f2;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  width: 10em;
+
+}
+
+li {
+  background-image: url(arrow.gif);
+  background-repeat: no-repeat;
+  background-position: 100% .4em;
+  padding-right: .6em;
+  margin: 6em 0;
+}
+
+p {
+  font-size: 16px;
+  opacity: .7;
+}
+
+.row{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 60px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  box-shadow: 1px 1px 1px 1px #888888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: .6;
+  background: white;
+  height: 80px;
+  margin: 40px;
+  font-size: 14px;
+
+}
+
+.card-2 {
+  flex-grow: 4.5;
+}
+
+.card-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: .7;
+  background: white;
+  margin: 40px;
+  height: 500px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+
+
+.card-4 {
+  box-shadow: 1px 1px 1px 1px #888888;
+  flex-grow: 6;
+  width: 20px;
+  height: 500px;
+  margin-bottom: 20px;
+  background: white;
+}
+
+#text {
+  padding: 10px
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jobTest</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+  <div>
+     <%= render 'shared/navbar' %>
+  </div>
+  <div>
+      <%= render 'shared/sidenav' %>
+  </div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="card">
+      <i class="fa fa-user"><p id="text">No user risk score yet</p></i>
+    </div>
+    <div class="card-2">
+        <%= render 'shared/tabs' %>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="card-3">
+      <ul>
+        <li>Target</li>
+        <li>Initial deposit</li>
+        <li>Monthyly payment</li>
+        <li>Period</li>
+      </ul>
+    </div>
+    <div class="card-4">
+        <canvas id="myChart"></canvas>
+    </div>
+  </div>
+</div>
+
+
+    <script>
+      let myChart = document.getElementById('myChart').getContext('2d');
+
+      let massPopChart = new Chart(myChart, {
+        type:'bar', //types: bar, horizontal, pie, line, donut
+        data: {
+          labels:['salt lake city', 'ogden', 'farmington'],
+          datasets: [{
+            label:'Utah population',
+            data: [
+              186440,
+              82825,
+              18275
+            ],
+            backgroundColor: 'blue'
+          }]
+        },
+        options:[]
+      });
+    </script>
+  </body>
+  <%= render 'shared/footer' %>
+</html>
