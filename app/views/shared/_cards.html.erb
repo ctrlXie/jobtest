@@ -7,32 +7,45 @@
     <div class="card-3">
       <ul>
         <li>
-          <div> Target
+          <div> <p>Target</p>
             <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
           </div>
         </li>
 
         <li>
-          <div> Initial deposit
+          <div> <p>Initial deposit</p>
             <input type="range" min="1" max="100" value="30" class="slider" id="myRange">
           </div>
         </li>
 
         <li>
-          <div> Monthly payment
+          <div> <p>Monthly payment</p>
             <input type="range" min="1" max="100" value="40" class="slider" id="myRange">
           </div>
         </li>
 
         <li>
-          <div> Period
-            <input type="range" min="1" max="100" value="60" class="slider" id="myRange">
+          <div>
+            <div class="qty mt-5"><p>Period</p>
+              <span class="minus bg-dark">-</span>
+                <input type="number" class="count" name="qty" value="5">
+              <span class="plus bg-dark">+</span>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="cancel">
+            <button type="button" class="btn btn-light">Cancel</button>
+            <button type="button" class="btn btn-light">Default</button>
           </div>
         </li>
       </ul>
     </div>
     <div class="card-4">
         <canvas id="myChart"></canvas>
+         <button type="button" class="btn btn-light">10 years</button>
+         <button type="button" class="btn btn-light">20 years</button>
     </div>
   </div>
 </div>
