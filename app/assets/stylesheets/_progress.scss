@@ -21,10 +21,11 @@
 .bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
 .bs-wizard > .bs-wizard-info { font-size: 20px; margin-left: 30px;}
 
-.btn-primary {
-    color: #fff;
-    background-color: #428bca;
-    border-color: #357ebd;
-  }
+a.btn.btn-success.btn-lg {
+  background: blue;
+}
+
+
+
 
 
