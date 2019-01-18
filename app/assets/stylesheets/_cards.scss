@@ -25,6 +25,11 @@ p {
   opacity: .7;
 }
 
+i.fa.fa-user {
+  margin-right: 5px;
+  padding-bottom: 5px;
+}
+
 .row{
   display: flex;
   justify-content: flex-end;
@@ -47,6 +52,7 @@ p {
 
 }
 
+
 .card-2 {
   flex-grow: 4.5;
 }
@@ -59,6 +65,8 @@ p {
   background: white;
   margin: 40px;
   height: 500px;
+  width: 170px;
+  margin-left: 27px;
   margin-top: 20px;
   box-shadow: 1px 1px 1px 1px #888888;
 }
